@@ -11,3 +11,10 @@ console.log(require);
 //3. process -> it is an object, it gives you information about the current process.
 
 console.log(process)
+
+// 4. module
+
+console.log(module)
+
+// 5. exports
+console.log(exports)
