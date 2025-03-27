@@ -5,6 +5,9 @@
 
 
 function download(url, cb){
+    /*
+    downloads content from the given url and passed the downloaded content to the given callback
+    */
     console.log("started downloading content",url);
     setTimeout(function down(){
         console.log("downloading...");
