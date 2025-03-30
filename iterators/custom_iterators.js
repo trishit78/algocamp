@@ -2,11 +2,11 @@ function fetchNextElement(array){
     let idx = 0;
     function next(){
         if(idx == array.length){
-            return undefined;
+            return {value:undefined, done:true};
         }
         const nextElement = array[idx];
         idx++;
-        return nextElement;
+        return {value:nextElement, done:false};
     }
     return {next};
 }
