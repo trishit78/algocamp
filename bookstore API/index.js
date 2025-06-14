@@ -83,9 +83,9 @@
 //     console.log('server is running');
 // })
 
-
+require('dotenv').config()
 const mongoose  = require('mongoose');
-mongoose.connect("mongodb+srv://trishit456:QrJNhrzr3jzseDi5@cluster0.t8utjub.mongodb.net/")
+mongoose.connect(process.env.mongodbConnection)
 .then(()=>console.log("database connected successfully"))
 .catch((e)=>console.log(e));
 
