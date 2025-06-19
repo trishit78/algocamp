@@ -4,10 +4,12 @@ const jwt =require('jsonwebtoken');
 
 const registerUser = async(req,res)=>{
     try {
+        console.log('this is')
         const username = req.body.username;
         const email= req.body.email;
         const password = req.body.password;
         const role = req.body.role;
+
 
         const checkExistingUser = await User.findOne({$or:[{username},{email}]});
         if(checkExistingUser){
