@@ -14,7 +14,7 @@ const addProduct = async(req,res)=>{
             name:"smartphone",
             category:"electronics",
             price:699,
-            insTock:true,
+            instock:true,
             tags:["mobile","tech"]
         },
         {

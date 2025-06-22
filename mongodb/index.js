@@ -11,6 +11,7 @@ connectDb();
 //   .then(() => console.log("mongodb connected successfully"))
 //   .catch((e) => console.log(e));
 
+app.use(express.json());
 app.use('/product',productRoute)
 
 
